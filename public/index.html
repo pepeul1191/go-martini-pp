@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset=utf-8>
+    <title>my-app</title>
+    <link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+</head>
+<body ng-controller="RootCtrl">    
+    <div id="content">
+        <div ng-switch="is_user_logged_in">
+            <div ng-switch-when="false">
+                <ng-include src="'views/login.tpl.html'"></ng-include>
+            </div>
+            <div ng-switch-when="true">
+                <ng-include src="'views/main.tpl.html'"></ng-include>
+            </div>
+        </div>
+    </div>  
+    <script src="js/lib/angular.min.js" type="text/javascript"></script>
+    <script src="js/lib/angular-route.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/controllers/rootController.js" type="text/javascript"></script>
+</body>
+</html>
