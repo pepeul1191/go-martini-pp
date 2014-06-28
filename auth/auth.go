@@ -26,9 +26,6 @@ func Login(w http.ResponseWriter, r *http.Request, session sessions.Session) (in
     // decode json
     json.Unmarshal(body, &credentials)
 
-    //username := credentials["username"]
-    //password := credentials["password"]
-
     //
     // @TODO check user in the database
     //
