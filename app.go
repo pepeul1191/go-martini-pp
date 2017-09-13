@@ -3,7 +3,7 @@ package main
 import "github.com/go-martini/martini"
 import "github.com/martini-contrib/sessions"
 
-import "github.com/IoSync/martini-boilerplate/auth"
+import "github.com/pepe/accesos/auth"
 
 func main() {
   m := martini.Classic()
