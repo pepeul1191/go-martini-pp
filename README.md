@@ -1,6 +1,29 @@
-martini-boilerplate
-===================
+## Martini Boilerplate PP
 
+Dependencias:
+
+    + go get github.com/go-martini/martin
+    + go get github.com/go-martini/martini-contrib
+    + go get github.com/codegangsta/gin
+
+Arrancar la aplicación en auto-reload:
+
+    $ gin run app.go
+
+Arrancar la aplicación sin auto-reload:
+
+  $ go run app.go
+
+---
+
+Fuentes:
+
+    + Martini Framework :  https://github.com/go-martini/martini
+    + Martini Boilerplate : https://github.com/immigrantsheep/martini-boilerplate
+    + Autoreload Go scripts : https://github.com/codegangsta/gin
+
+---
+    
 martini-boilerplate - project skeleton for [martini](https://github.com/go-martini/martini) GoLang web framework with `AngularJs`, `Twitter Boostrap` and `Font awesome`.
 
 features
